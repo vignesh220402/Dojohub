@@ -17,7 +17,7 @@ import TouchModule from './pages/TouchModule'
 import SpeakingModule from './pages/SpeakingModule'
 const App = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename='/Dojohub'>
       <Routes>
         <Route path='/' element={<Main />} />
         <Route path='/audio' element={<AudioTest />} />
