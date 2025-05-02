@@ -1,0 +1,212 @@
+/* General Audio Quiz Container */
+.audio-quiz-container {
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 12px; /* Rounded corners */
+  font-family: Arial, sans-serif;
+}
+
+/* Header Container */
+.audio-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.audio-logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.audio-logo {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 5px;
+}
+
+/* Title and Question Alignment */
+.audio-title-container {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+
+.audio-title {
+  font-size: 1.8rem;
+  margin: 0;
+  color: #1f2937; /* Blue for title */
+}
+
+.audio-question {
+  font-size: 1rem;
+  margin: 5px 0 0;
+  color: #9ca3af; /* Light gray for subtitle */
+}
+
+/* Audio Player Section */
+.audio-player-container {
+  margin-top: 15px;
+  width: 75%;
+}
+
+.audio-player-container audio {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.audio-controls {
+  position: relative;
+  left: 30%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 700px;
+  background-color:  #1f2937;
+  border-radius: 20px;
+  padding: 10px;
+  justify-content: space-between;
+}
+
+.audio-control-backward,
+.audio-control-play-pause,
+.audio-control-forward {
+  background-color: #f5f6f8;
+  color: #ffffff;
+  border: none;
+  border-radius: 50%;
+  font-size: 1rem;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.audio-control-backward:hover,
+.audio-control-play-pause:hover,
+.audio-control-forward:hover {
+  background-color: #1d4ed8; /* Darker blue on hover */
+}
+
+.audio-progress-bar input[type="range"] {
+  width: 500px;
+  appearance: none;
+  height: 5px;
+  background: #9ca3af;
+  border-radius: 5px;
+  outline: none;
+}
+
+.audio-progress-bar input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #2563eb;
+  cursor: pointer;
+}
+.Your-answer{
+  margin-left: 100px;
+}
+/* Options Section */
+.audio-options {
+  margin-top: 20px;
+  text-align: left;
+  margin-left: 100px;
+}
+
+.audio-radio-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.audio-radio-option input {
+  display: none;
+}
+
+.audio-radio-option .audio-custom-radio {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #9ca3af;
+  border-radius: 50%;
+  position: relative;
+  background-color: white;
+}
+
+.audio-radio-option input:checked + .audio-custom-radio {
+  background-color: #2563eb;
+  border-color: #2563eb;
+}
+
+.audio-radio-option input:checked + .audio-custom-radio::after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.audio-radio-option span {
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+.audio-radio-option.audio-disabled {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+/* Submit Button */
+.audio-submit-button {
+  background-color: #2563eb;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 20px;
+  margin-left: 100px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+}
+
+.audio-submit-button:hover {
+  background-color: #1d4ed8;
+}
+
+.audio-submit-button:disabled {
+  background-color: #9ca3af;
+  cursor: not-allowed;
+}
+
+/* Quiz Completion Message */
+.audio-quiz-container h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.audio-quiz-container p {
+  font-size: 1.2rem;
+}
+
+.audio-restart-button {
+  padding: 10px 20px;
+  background-color: #2563eb;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.audio-restart-button:hover {
+  background-color: #1d4ed8;
+}

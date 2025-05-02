@@ -1,0 +1,23 @@
+.top-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+.mydiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mydiv a{
+    padding: 10px;
+    width: 150px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 20px;
+    background-color:rgb(4, 4, 71);
+    color: white;
+    font-size: 17px;
+    font-weight: 900;
+}

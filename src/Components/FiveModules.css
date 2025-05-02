@@ -1,0 +1,75 @@
+.first {
+    margin-top: 35px;
+    margin-left: 50px;
+}
+
+.exit-btn {
+    padding: 10px;
+    position: absolute;
+    right: 100px;
+    top: 50px;
+    width: 110px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 20px;
+    background-color: rgb(4, 4, 71);
+    font-size: 17px;
+    font-weight: 900;
+}
+
+.exit-btn a {
+    color: white;
+    text-decoration: none;
+}
+
+.five-module {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 30vh;
+    margin-right: 100px;
+}
+
+.first-fivemod img {
+    width: 200px;
+    margin-left: 80px;
+    height: 170px;
+    border-radius: 50px;
+}
+
+.first-fivemod h1 {
+    text-align: center;
+    margin-left: 75px;
+    color: red;
+}
+
+.first-fivemod a {
+    text-decoration: none;
+}
+
+.vision-topic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.sectences h3 {
+    color: red;
+    font-size: 30px;
+}
+
+.sectences h4 {
+    color: rgb(4, 4, 71);
+    font-size: 25px;
+    font-weight: 800;
+}
+@media screen and (max-width: 720px) {
+    .first-fivemod img {
+        width: 150px;
+        height: 150px;
+    }
+}
